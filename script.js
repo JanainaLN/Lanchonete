@@ -11,9 +11,19 @@ function calcular() {
     const valor = inputValor.valueAsNumber 
 
 
-    if(codigo === 1){
-       const  valor = 5.00
+    if(codigo = 1){
+       const total = quantidade * 5 
     }
+    else if(codigo = 2){
+        const total = quantidade * 3.50
+    }
+    else if(codigo = 3){
+        const total = quantidade * 4.80
+    }
+    else if (codigo = 4){
+        const total = quantidade * 8.90
+    }
+    else if
   
 
     /*

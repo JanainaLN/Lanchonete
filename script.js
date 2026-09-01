@@ -8,39 +8,33 @@ button.addEventListener("click", calcular)
 function calcular() {
     const codigo = inputCodigo.valueAsNumber 
     const quantidade = inputQuantidade.valueAsNumber 
-    const valor = inputValor.valueAsNumber 
+
+    let total;
 
 
-    if(codigo = 1){
-       const total = quantidade * 5 
+    if(codigo === 1){
+        total =  5 * quantidade;
+        paragrafoResultado.textContent = 'Valor = R$ ' + total.toFixed(2);
+        }
+    else if(codigo === 2){
+        total = 3.5 * quantidade;
+        paragrafoResultado.textContent = 'Valor = R$ ' + total.toFixed(2);
+        }
+    else if(codigo === 3){
+        total =  4.8 * quantidade;
+        paragrafoResultado.textContent = 'Valor = R$ ' + total.toFixed(2);
     }
-    else if(codigo = 2){
-        const total = quantidade * 3.50
+    else if (codigo === 4){
+        total = 8.9 * quantidade;
+        paragrafoResultado.textContent = 'Valor = R$ ' + total.toFixed(2);
     }
-    else if(codigo = 3){
-        const total = quantidade * 4.80
+    else if(codigo === 5){
+        total = 7.32 * quantidade;
+        paragrafoResultado.textContent = 'Valor = R$ ' + total.toFixed(2);
     }
-    else if (codigo = 4){
-        const total = quantidade * 8.90
-    }
-    else if
-  
 
-    /*
-    if (inputPreco.value === "" || inputQuantidade.value === "" || inputPreco.value === "") {
-        alert("Digite um valor válido.")
-        return
+    else{
+        paragrafoResultado.textContent = 'Código do produto inválido';
     }
 
-    const total = preco * quantidade // 27
-
-    if (valor >= totalCompra) {
-        const troco = valor - totalCompra
-        const trocoFormatado = troco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-        paragrafoResultado.textContent = `Troco: ${trocoFormatado}`
-    } else {
-        const valorDevido = totalCompra - valor
-        const valorDevidoFormatado = valorDevido.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-        paragrafoResultado.textContent = `Dinheiro insuficiente. Faltam ${valorDevidoFormatado}`
-    } */
 }
